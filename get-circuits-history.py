@@ -128,10 +128,12 @@ df.rename(columns={"Type": "Circuit Type", "Setup": "Downforce Setup"}, inplace=
 output_path = "data/f1_training_data_final.csv"
 df.to_csv(output_path, index=False)
 
+updated_df = pd.read_csv(output_path)
+
 print(f"✅ Done! File saved to {output_path}")
 
 missing_info = df[df["Circuit Type"].isnull()]["Circuit Name"].unique()
 if len(missing_info) > 0:
     print(f"⚠️ Warning: The following tracks were not found in your dictionary: {missing_info}")
 
-print(df.columns)
+print(updated_df.columns)
