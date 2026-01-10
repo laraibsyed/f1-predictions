@@ -88,6 +88,7 @@ sns.heatmap(
     linewidths=.5
 )
 plt.title('Feature Correlation Matrix')
+plt.tight_layout()
 plt.show()
 
 print("Final List of Columns: ", final_df.columns)
