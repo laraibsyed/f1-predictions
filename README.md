@@ -20,7 +20,7 @@ The model is trained on historical data (2018–2024) and tested on the 2025 sea
 ### What Matters to the Model?
 The model discovered that **Grid Position** is the primary indicator of success, followed by **Team Strength** (specifically using Haas as a baseline anchor).
 
-![Feature Importance Plot](assets/feature_importance.png)
+<img width="1440" height="792" alt="Feature Important" src="https://github.com/user-attachments/assets/f5236886-09a4-4a86-abb3-9c9430702990" />
 *(Figure 1: XGBoost Feature Importance showing GridPosition as the dominant factor)*
 
 ---
@@ -65,7 +65,7 @@ We use **Query Groups** to tell the XGBoost Ranker which drivers are competing i
 ### Correlation Heatmap
 The heatmap confirms the negative correlation between **Grid Position** and our **Inverted Target Score** (Lower Grid = Higher Score). It also highlights the "Team Hierarchy" automatically learned by the model.
 
-![Correlation Heatmap](assets/correlation_matrix.png)
+<img width="1440" height="792" alt="Correlation Matrix" src="https://github.com/user-attachments/assets/77579bf1-374f-4e25-a2e5-a28141b81f17" />
 *(Figure 2: Feature Correlation Matrix showing the relationships between Grid, Points, and Teams)*
 
 ---
